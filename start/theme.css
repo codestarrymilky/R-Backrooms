@@ -1,0 +1,449 @@
+:root {
+   --theme-base: "black-highlighter";
+   --theme-id: "liminal";
+   --theme-name: "Liminal Theme";
+ 
+   --logo-image: url("http://r-backrooms-wiki-cn.wikidot.com/local--files/rate:lpoigd5289-logo/ERR");
+   --header-title: "R-backrooms同人创作站";
+   --header-subtitle: "你什么时候来过这里。";
+ 
+   --body-font: proxima-nova, sans-serif;
+   --header-font: 'IBM Plex Mono', '等线', sans-serif;
+   --title-font: 'Fantasque Sans Mono', monospace;
+   --mono-font: 'Fantasque Sans Mono', monospace;
+ 
+   --white-monochrome: 254, 251, 255;
+   --pale-gray-monochrome: 251, 249, 255;
+   --light-gray-monochrome: 114,40,107;
+   --gray-monochrome: 85,22,90;
+   --black-monochrome: 25, 20, 16;
+   --bright-accent: 114,40,107;
+   --medium-accent: 128, 29, 128;
+   --dark-accent: 114,40,107;
+   --pale-accent:  114,40,107;
+ 
+   --swatch-topmenu-border-color: var(--medium-accent);
+ 
+   --link-color: 230,23,68;
+   --hover-link-color: 230, 33, 68;
+   --visited-link-color: 230, 44, 68;
+   —newpage-color: 230,23,68;
+ 
+   --background-gradient-distance: 0rem;
+ 
+   --gradient-header: linear-gradient(to top,
+      rgba(var(--medium-accent)) 0%,
+      rgba(var(--medium-accent), 0.90) 100%
+   );
+   --diagonal-stripes: linear-gradient(transparent 0);
+}
+
+#login-status {
+   position: absolute !important;
+}
+#account-options {
+   display: none !important;
+}
+
+#skrollr-body {
+    background-image: radial-gradient(circle, rgb(var(--medium-accent)) 50%, transparent 0);
+    background-repeat: repeat;
+    background-size: 0.25em 0.25em;
+    width: 100%;
+    height: 7.5rem;
+}
+ 
+#side-bar .side-block div a img {
+    filter: grayscale(100%);
+}
+ 
+#container {
+    background-image: radial-gradient(circle, transparent 50%, transparent 0);
+    background-size: 0.25em 0.25em;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+ 
+div#page-options-bottom-2>a,
+div#page-options-bottom>a {
+    border-radius: 0em;
+    -moz-border-radius: 0em;
+    border: none;
+}
+ 
+div#page-options-bottom-2>a:active,
+div#page-options-bottom-2>a:hover,
+div#page-options-bottom>a:active,
+div#page-options-bottom>a:hover {
+    border: none;
+}
+ 
+#header,
+#top-bar {
+    background-attachment: scroll;
+}
+ 
+#header {
+    background-image: none;
+}
+ 
+#header::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-image: var(--logo-image);
+    background-size: auto 16rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+ 
+#header h1,
+#header h1 a {
+    position: absolute;
+    top: 1rem;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+ 
+#header h2,
+#header h2 span,
+#header h2 span::before {
+    position: absolute;
+    top: 2rem;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+ 
+#header h1 a::before,
+#header h2 span::before {
+    text-shadow: .063rem 0.1rem 0.1rem #0c0c0c;
+}
+ 
+a.newpage {
+    background: transparent;
+    text-decoration: none
+}
+ 
+a.newpage {
+    color: rgb(var(--newpage-color))
+}
+ 
+blockquote {
+    box-shadow: 0.05rem 0.1rem 0.3rem rgba(0, 0, 0, .25);
+}
+
+.styled-quote {
+   background-color:rgb(var(--white-monochrome));
+   border-left: 0.5rem solid rgba(var(--gray-monochrome));
+   padding: 0.1rem 1rem;
+   margin: 0.5rem 0 0.5rem 0.25rem;
+   box-shadow: 0.05rem 0.1rem 0.3rem rgba(0,0,0,.25);
+}
+ 
+.dark-styled-quote {
+   background-color:rgb(var(--gray-monochrome));
+   border-left: 0.5rem solid rgba(var(--pale-gray-monochrome));
+   color:rgb(var(--white-monochrome));
+   padding: 0.1rem 1rem;
+   margin: 0.5rem 0 0.5rem 0.25rem;
+   box-shadow: 0.05rem 0.1rem 0.3rem rgba(0,0,0,.25);
+}
+ 
+.dark-styled-quote a{
+color: rgb(var(--swatch-menubg-medium-color));
+}
+ 
+.lightblock {
+   background-color:rgb(var(--white-monochrome));
+   padding: 0.01rem 1rem;
+   margin: 0.5rem 0 0.5rem 0.25rem;
+   box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,.25);
+}
+ 
+.darkblock {
+   background-color:rgb(var(--gray-monochrome));
+   color:rgb(var(--white-monochrome));
+   padding: 0.01rem 1rem;
+   margin: 0.5rem 0 0.5rem 0.25rem;
+   box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,.25);
+}
+ 
+.darkblock a {
+color: rgb(var(--swatch-menubg-medium-color));
+}
+ 
+#side-bar div.menu-item a[href*="/scp-"] {
+    text-align: left !important;
+    width: auto !important;
+}
+ 
+#side-bar div.menu-item.small a {
+    justify-content: center;
+    width: auto;
+    padding: 0 0.25em;
+    text-indent: 0;
+    white-space: nowrap;
+}
+ 
+#side-bar div.menu-item a {
+    justify-content: flex-start;
+    padding: 0 0 0 calc(var(--base-font-size)*.93333);
+}
+ 
+#side-bar div.menu-item,
+#side-bar div.menu-item>p {
+    display: flex;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 1.5rem;
+    min-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+    box-shadow: inset 0 calc(var(--sidebar-internal-border-thickness)*-1) 0 0 rgba(var(--sidebar-border-color));
+    font-size: 0;
+}
+ 
+#side-bar div.menu-item>:last-child {
+    flex-grow: 2;
+}
+ 
+#side-bar .side-block {
+    margin-top: -0.5rem;
+}
+ 
+#side-bar div.menu-item a:not(a:first-child) {
+    border-left: var(--sidebar-internal-border-thickness) solid rgba(var(--swatch-border-color), .08)
+}
+ 
+#side-bar div.scpnet-interwiki-wrapper {
+    min-height: 300px;
+}
+ 
+.thread-container .post .long .content .image:not(.collapsible-block .image) {
+    object-fit: cover;
+    max-height: 2em;
+    width: 100%;
+    transition: max-height 0.5s;
+}
+ 
+.thread-container .post .long .content .image:hover:not(.collapsible-block .image) {
+    max-height: 100em;
+}
+ 
+div.scpnet-interwiki-wrapper {
+    margin: 0;
+    width: auto;
+}
+iframe.scpnet-interwiki-frame {
+    border: inherit;
+    width: 100%;
+    height: 230px;
+}
+@media (min-width:768px) {
+    div.scpnet-interwiki-wrapper,
+    iframe.scpnet-interwiki-frame {
+        width: 100%;
+    }
+}
+
+
+#page-content div#u-adult-warning {
+    width: fit-content;
+    margin: 0 auto 1.25rem;
+    padding: 0.5rem 1rem;
+    border: 3px solid #333;
+    background: #e4e4e4;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+#page-content div#u-adult-warning > div#u-adult-header {
+    font-size: 300%;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+    color: #901;
+}
+#page-content div#u-adult-warning > div#u-adult-header p {
+    margin: 0;
+}
+#page-content div#u-adult-warning > .error-block {
+    color: unset;
+    padding: unset;
+    margin: unset;
+    border: unset;
+    margin-bottom: 1em;
+}
+ 
+/* 去除用户信息中头像白边 */
+#odialog-container .owindow>div.modal-body>img[style*="padding: 2px 8px;"]:first-child {
+    background-color: initial!important;
+}
+ 
+form#edit-page-form .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
+    content: "简要修改说明";
+}
+ 
+table.page-history tr:nth-of-type(2) td:nth-of-type(1)::before {
+    content: "版本";
+}
+ 
+table.page-history tr:nth-of-type(2) td:nth-of-type(3)::before {
+    content: "标记";
+}
+ 
+table.page-history tr:nth-of-type(2) td:nth-of-type(4)::before {
+    content: "操作";
+}
+ 
+table.page-history tr:nth-of-type(2) td:nth-of-type(5)::before {
+    content: "更新者";
+}
+ 
+table.page-history tr:nth-of-type(2) td:nth-of-type(6)::before {
+    content: "日期";
+}
+ 
+#site-tools-box::before {
+    content: "网站工具";
+}
+ 
+#main-content .page-tags::before {
+    content: "标签\0021b4";
+}
+ 
+#login-status #account-options li>a[href*="/messages"]::after {
+    content: "消息";
+}
+ 
+[id*="u-credit"] div.credit-back::before {
+    content: "返回";
+}
+ 
+#toc #toc-action-bar a::after {
+    content: "目录";
+}
+
+.interwiki1 {
+ 
+    background: rgb(var(--light-gray-monochrome));
+    margin: 10px 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,102,.5);
+    box-sizing: border-box;
+    /*width: 15em;*/
+    width: calc(var(--base-font-size*0.93333*19));
+ 
+}
+ 
+.interwiki1_title {
+ 
+    color: rgb(var(--black-monochrome));
+    border-bottom: solid 1px rgb(var(--black-monochrome));
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 8pt;
+    font-weight: bold;
+ 
+}
+ 
+.interwiki1_entry {
+ 
+    position: relative;
+    margin: 2px 0;
+ 
+}
+ 
+.interwiki1_entry p::before {
+ 
+    content: "■";
+    font-size: 9px;
+    color: rgb(var(--black-monochrome));
+    position: relative;
+    margin: 0 7px 0 5px;
+    bottom: 3px;
+}
+
+.interwiki1_entry a, .interwiki1_entry a:visited {
+ 
+    font-weight: bold;
+    color: rgb(var(--black-monochrome));
+    text-decoration: none;
+    background: transparent;
+ 
+}
+ 
+
+.interwiki1_entry a:hover {
+    color: rgb(var(--black-monochrome));
+    background-color: transparent;
+    text-decoration: underline;
+ 
+}
+#side-bar .side-block.media a[href*="discord"] {
+    --social-logo-mask: var(--discord-mask-round);
+}
+ 
+#side-bar .side-block.media a[href*="b23.tv"] {
+    --social-logo-mask: var(--bilibili-mask-round);
+    --social-color: var(--bilibili-icon-color);
+}
+ 
+#side-bar .side-block.media a[href*="fandom"] {
+    --social-logo-mask: var(--fandom-mask-round);
+    --social-color: var(--fandom-icon-color);
+}
+ 
+#side-bar .side-block.media a[href*="tieba"] {
+    --social-logo-mask: var(--tieba-mask-round);
+    --social-color: var(--tieba-icon-color);
+}
+
+.light-logo-block{
+    padding: 0.01rem 1rem;
+    color:black;
+    box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,.25);
+    margin: 0.5rem 0 0.5rem 0.25rem;
+    display: block;
+    position: relative;
+    background-color:rgb(var(--pale-gray-monochrome)) ;
+    }
+ 
+.light-logo-block::after{
+    content: "";
+    float: center;
+    border: solid 2px white;
+    background: url( http://r-backrooms-wiki-cn.wikidot.com/local--files/rate:lpoigd5289-logo/ERR )center/25% no-repeat;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    }
+
+.page-rate-widget-box .ratedown { display: none!important }
+
+.page-rate-widget-box .cancel { display: none!important }
+
+#prw54355, .prw54354 {font-size: 0!important;height: 0;}
+#prw54355:after {font-size: .9rem;}
+.prw54354:after {font-size: 1.05rem;}
+#prw54355:after, .prw54354:after {content: "+100";}
+
+
+
