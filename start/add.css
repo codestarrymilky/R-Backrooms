@@ -1,3 +1,4 @@
+#page-title { display: none; }
 /* ========== LINK ========= */
 .cool-links a,
 .cool-links a:visited {
@@ -35,6 +36,62 @@
     text-decoration: none;
 }
 
+/* ========== BANNER ========= */
+.banner{
+    position:relative;
+    z-index:5;
+    background:rgb(var(--gray-monochrome));
+    margin: none;
+}
+
+.navflex{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+
+.topnav{
+    z-index:1;
+    background: rgb(var(--gray-monochrome));
+    color: rgb(var(--white-monochrome));
+    border-radius: 0 0 0.6rem 0.6rem;
+    box-sizing: border-box;
+    padding: 1rem 0.5rem 0.1rem 0.5rem;
+    width: 32%;
+    position: relative;
+    top: -4.5rem;
+    transition: 0.2s;
+}
+
+.topnav:hover{
+    top:-0.5rem;
+}
+
+.topnav a {
+    color: rgb(var(--swatch-menubg-medium-color));
+}
+
+@media only screen and (max-width: 768px) {
+    .newsicon{
+        right:0rem;
+        top:1.5rem;
+    }
+
+    .newsflair{
+        right:2rem;
+        top:3rem;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .footerspan{
+        display:none;
+    }
+
+    .columnblock{
+        flex-flow:column wrap;
+    }
+}
 /* ========== 精品 ========= */
 /* ======================= 布局 ================== */
 .boutique-container {
