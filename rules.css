@@ -38,10 +38,10 @@ ul[style="margin: 0;"] .unfolded div[style="margin: 0;"]::before {
 
 
 ul[style="margin: 0;"][role="listitem"] .unfolded div[style="margin: 0;"]::before {
-    content: "\8bf7\65f6\523b\6ce8\610f\9075\5b88\89c4\5219\ff0c\4ee5\4e0b\662f\672c\7ad9\6697\53f7\7684\7b2c\4e00\6bb5\ff1a\4f60\6ce8\89c6\4ed6";
+    content: "\8bf7\65f6\523b\6ce8\610f\9075\5b88\89c4\5219\ff0c\4ee5\4e0b\662f\672c\7ad9\6697\53f7\7684\7b2c\4e00\4e8c\ff1a\4f60\6ce8\89c6\4ed6";
   }
 
 ul[style="margin: 0;"][role="list"] .unfolded div[style="margin: 0;"]::before {
-    content: "\8bf7\65f6\523b\6ce8\610f\9075\5b88\89c4\5219\ff0c\4ee5\4e0b\662f\672c\7ad9\6697\53f7\7684\7b2c\4e00\6bb5\ff1a\4f46\522b\5fd8\4e86\4ed6\4e5f\5728\6ce8\89c6\4f60";
+    content: "\8bf7\65f6\523b\6ce8\610f\9075\5b88\89c4\5219\ff0c\4ee5\4e0b\662f\672c\7ad9\6697\53f7\7684\7b2c\4e00\4e09\ff1a\4f46\522b\5fd8\4e86\4ed6\4e5f\5728\6ce8\89c6\4f60";
   }
 
