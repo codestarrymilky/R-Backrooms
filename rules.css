@@ -13,7 +13,7 @@ ul[style="margin: 0;"] li {
     line-height: 1.5;
 }
 
-ul[style="margin: 0;"] li div a {
+ul[style="margin: 0;"] li div.foldable-list-container a {
     color: black;
     color: rgb(var(--swatch-text-general));
     text-decoration: none !important;
