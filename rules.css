@@ -1,0 +1,37 @@
+body div#page-options-bottom a#history-button,
+body div#page-options-bottom-2 a#view-source-button,
+body div#action-area form#history-form-1,
+body div#action-area div.page-source {
+    display: none !important;
+}
+
+ul[style="margin: 0;"],
+ul[style="margin: 0;"] li {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+ul[style="margin: 0;"] li a {
+    color: black;
+    color: rgb(var(--swatch-text-general));
+    text-decoration: none !important;
+    cursor: text;
+}
+
+ul[style="margin: 0;"] .folded div[style="margin: 0;"] {
+    display: none;
+}
+
+ul[style="margin: 0;"] .unfolded div[style="margin: 0;"] {
+    display: inline-flex;
+}
+
+ul[style="margin: 0;"] .unfolded div:first-of-type {
+    display: none;
+}
+
+ul[style="margin: 0;"] .unfolded div[style="margin: 0;"]::before {
+    content: "\8bf7\65f6\523b\6ce8\610f\9075\5b88\89c4\5219\ff0c\4ee5\4e0b\662f\672c\7ad9\6697\53f7\7684\7b2c\4e00\6bb5\ff1a";
+  }
