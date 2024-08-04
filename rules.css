@@ -1,3 +1,106 @@
+:root {
+    --body-font: "Noto Sans SC", "Noto Sans TC", Arimo, Verdana, Geneva, sans-serif;
+}
+
+div.style-block {
+    background-color: rgb(var(--pale-gray-monochrome));
+    padding: 1px 1em;
+    margin: 1em 0;
+    border-radius: 0.6em;
+}
+
+div.style-block p {
+    margin-top: 0.5em;
+}
+
+div.style-block h1 {
+    margin: var(--base-font-size) 0;
+    text-align: center;
+}
+
+div.style-block h2,
+div.style-block h3 {
+    display: flex;
+    margin: 1em 0 0;
+    align-items: flex-start;
+}
+
+div.style-block h2 span,
+div.style-block h3 span {
+    margin: 0;
+    --wght: 700;
+    font-size: var(--base-font-size);
+    font-family: Recursive, "Noto Sans SC";
+}
+
+div.style-block h2::after,
+div.style-block h3::after {
+    content: "";
+    flex-grow: 1;
+    height: 0;
+    margin: auto auto auto 0.75em;
+    border-bottom: 1.5px solid rgb(var(--white-monochrome));
+}
+
+div.style-block ul{
+    margin: 0.5em 0 2em;
+    padding-left: 0;
+}
+
+div.style-block > ul:last-of-type,
+div[style="margin-left: 1em;"] > ul:last-of-type {
+    margin-bottom: 0;
+}
+
+div.style-block ul li {
+    margin-bottom: 1em;
+}
+
+div.style-block ul li.folded,
+div.style-block ul li.unfolded,
+div[style="margin-left: 1em;"] ul li.folded,
+div[style="margin-left: 1em;"] ul li.folded,
+div[style="margin-left: 1em;"] ul li ul li.folded,
+div[style="margin-left: 1em;"] ul li ul li.folded{
+    margin-bottom: 0 !important;
+    color: black;
+}
+
+div.style-block ul li::marker {
+    font-size: 0;
+}
+
+div.style-block div.quote-block {
+    background: rgb(var(--white-monochrome));
+    padding: 0.1px 1em;
+    margin: 1em 0;
+    border-radius: 0.6em;
+}
+
+div.style-block div.quote-block p {
+    margin: 1em 0;
+}
+
+div.style-block div.quote-block ul {
+    margin: 1em 0 1em 1.5em;
+    list-style-type: disc;
+}
+
+
+
+div.style-block div.quote-block ul li::marker {
+    font-size: 1em;
+}
+
+#page-title, div.footnotes-footer { display: none }
+
+@media only screen and (max-width: 768px) {
+    div.style-block h2 span,
+    div.style-block h3 span {
+        font-size: calc(0.9 * var(--base-font-size));
+    }
+}
+
 body div#page-options-bottom a#history-button,
 body div#page-options-bottom-2 a#view-source-button,
 body div#action-area form#history-form-1,
